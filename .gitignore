@@ -1,0 +1,7 @@
+
+*.opendb
+*.db-shm
+*.db-shm
+*.db
+*.db-wal
+*.ipch
