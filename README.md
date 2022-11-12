@@ -1,2 +1,1 @@
-# ml cpp
- Machine Learning Algorithms implemented in C++
+# Machine Learning Algorithms implemented in Python from Scratch
