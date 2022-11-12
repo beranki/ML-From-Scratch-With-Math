@@ -4,4 +4,5 @@ Math behind Simple Linear Regression:
 ![IMG_20221111_221622691](https://user-images.githubusercontent.com/77950550/201461277-72ea846e-b972-4329-804e-7ab790f13db4.jpg)
 
 Test Plot Here:
+
 ![testPlot](https://user-images.githubusercontent.com/77950550/201461362-68efedcd-b966-4feb-933b-4ccea00d0215.png)
