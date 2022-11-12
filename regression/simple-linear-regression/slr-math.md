@@ -1,1 +1,0 @@
-- <img src="https://latex.codecogs.com/gif.latex?\hat{Y} = B_{0} + B_{1}X =\text { Basis of prediction of correlating line } t " /> 
