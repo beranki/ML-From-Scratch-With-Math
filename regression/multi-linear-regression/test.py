@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from LinearRegression import LinearRegression
+from MultiLinearRegression import MultiLinearRegression
 
 def main():
     dataset = pd.read_csv("estates.csv")
@@ -11,8 +11,8 @@ def main():
     print(X.shape)
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8,test_size=0.2,random_state=100)
-    lr = LinearRegression(0.01, 1000)
-    b_0, b_1 = lr.fit(X_train, y_train)
+    mlr = MultiLinearRegression(0.01, 1000)
+    b_0, b_1 = mlr.fit(X_train, y_train)
 
     plt.scatter(X, y)
     y_pred = b_0 + b_1*X_test
