@@ -16,13 +16,18 @@ def main():
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.8,test_size=0.2,random_state=42)
 
     mlr = MultiLinearRegression(0.01, 1000) #learning rate of 0.01, 1000 epochs
-    W, b = mlr.fit(np.array(X_train), y_train)
+    W, b, costs = mlr.fit(np.array(X_train), y_train)
     y_pred = mlr.predict(X_test)
 
     r2acc(y_pred, y_test) #runs w/ an r2 accuracy of .6777689831387611 on this dataset
 
     print(W)
     print(b)
+    plt.plot(costs)
+    plt.title("Cost function over epochs")
+    plt.xlabel("Epoch #")
+    plt.ylabel("Cost Function (MSE)")
+    plt.show()
 
 def r2acc(y_pred, y_test):
     rss = np.sum((y_pred - y_test) ** 2)
