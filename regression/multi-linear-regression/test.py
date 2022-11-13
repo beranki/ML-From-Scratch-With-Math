@@ -19,7 +19,7 @@ def main():
     W, b, costs = mlr.fit(np.array(X_train), y_train)
     y_pred = mlr.predict(X_test)
 
-    r2acc(y_pred, y_test) #runs w/ an r2 accuracy of .6777689831387611 on this dataset
+    r2acc(y_pred, y_test) #runs w/ an r2 accuracy of .6753893104872477 on this dataset
 
     print(W)
     print(b)

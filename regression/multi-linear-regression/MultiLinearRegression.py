@@ -14,8 +14,8 @@ class MultiLinearRegression:
 
         for epoch in range(self.epochs): #repeat gradient descent for # of epochs (also opt for reaching convergence)
             y_pred = np.dot(X, self.W) + self.b
-            dW = 1/self.m * np.dot(X.T, (y_pred - y)) #computing the gradient of W
-            db = 1/self.m * np.sum(y_pred - y) #computing the gradient of b
+            dW = 2/self.m * np.dot(X.T, (y_pred - y)) #computing the gradient of W
+            db = 2/self.m * np.sum(y_pred - y) #computing the gradient of b
 
             self.W -= self.alpha * dW #adjusting the weights
             self.b -= self.alpha * db #adjusting the biases
