@@ -1,49 +1,5 @@
 import numpy as np
 
-"""class LogisticRegression:
-    def __init__(self, iters=1000, lr=0.01, threshold=0.5):
-        self.iters = iters
-        self.lr = lr
-        self.threshold = threshold
-        self.W = None
-        self.b = None
-
-    def sigmoid(self, z):
-        return (1/(1+np.exp(-z)))
-
-    def fit(self, X, y):
-        m, n = X.shape
-        self.W = np.zeros(n)
-        self.b = 0
-
-        loss_ = []
-        for i in range(self.iters):
-            z = np.dot(X, self.W) + self.b
-            p = self.sigmoid(z)
-
-            loss_.append(self.loss(p, y))
-
-            tmp = np.reshape(p-y.T, m)
-            dW = np.dot(X.T, tmp) / m
-            db = np.sum(tmp) / m
-
-            self.W -= self.lr*dW
-            self.b -= self.lr*db
-            
-        return self.W, self.b, loss_
-
-    def loss(self, p, y):
-        return -(y*np.log(p) + (1-y)*np.log(1-p)).mean()
-
-    def predict(self, X):
-        print(self.b.shape)
-        print(X.shape)
-
-        z = np.dot(X, self.W) + self.b
-        p = self.sigmoid(z)
-        return p
-"""
-
 class LogisticRegression() :
     def __init__( self, lr, epochs, threshold=0.5) :        
         self.lr = lr        
