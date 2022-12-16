@@ -5,7 +5,5 @@ regularizer term is min(||w||^2 /2)
 
 gradient descent needs the regularizer and the error term to define an optimization term:
 optimization term looks like the following 
-<p>
-    <span>&Sigma;</span>
-    k ( N - k + 1 )
-</p>
+&sum;<sub>k=1</sub><sup>N</sup> k (N - k + 1)
+
