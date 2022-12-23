@@ -1,7 +1,10 @@
 # Machine Learning Algorithms implemented in Python from Scratch
 List of Available algos:
-- Linear Regression
+Regression(Clustering, Clasif):
+- Linear Regression w/ 2 variables
 - Multivariate Linear Regression
 - Logistic Regression
-- Polynomal Regression
 - Support Vector Regression
+- PCA
+- Naive Bayes
+- Decision Trees
