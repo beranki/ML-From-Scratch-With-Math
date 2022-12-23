@@ -9,7 +9,7 @@ class SVM:
     def hinge_loss(self, X, y):
         regularizer = self.W*self.W/2
         for i in range(X.shape[0]):
-            loss = regularizer + self.C*max(0, 1-(y[i] * np.dot(self.W, X[i]) + self.b)) #adds regularizer metric to error term
+            loss = regularizer + self.C*max(0, 1-y[i]*(np.dot(self.W, X[i])+self.b)) #adds regularizer metric to error term
         return loss[0][0]
 
     def fit(self, X, y, batch_size, lr, epochs):
@@ -19,7 +19,7 @@ class SVM:
         ids = np.arange(n)
         np.random.shuffle(ids)
 
-        self.W = np.zeros((1, m))
+        self.W = np.zeros((1,m))
         self.b = 0
         self.losses = []
 
@@ -37,7 +37,7 @@ class SVM:
                             dW += self.C * y[ids[a]] * X[ids[a]]
                             db += self.C * y[ids[a]]
 
-                    self.W -= lr*(dW - self.W)
+                    self.W -= lr*(self.W - dW)
                     self.b += lr*db
 
         return self.W, self.b, self.losses
