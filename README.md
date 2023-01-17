@@ -1,5 +1,6 @@
 # Machine + Deep Learning Algorithms implemented in Python from Scratch (MATH provided)
 
+Implementation in Python, Numpy
 
 - List of available algorithms: 
   - (in regression folder)
