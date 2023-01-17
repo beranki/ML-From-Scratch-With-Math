@@ -3,7 +3,7 @@ List of Available algos:
 
 Regression(Clustering, Clasif):      |  STATUS  
 -----------------------------------------------------
-- Linear Regression w/ 2 variables   |    ✅    
+- Linear Regression w/ 2 variables   |<tab>✅    
 - Multivariate Linear Regression     |    ✅
 - Logistic Regression                |    ✅
 - Support Vector Regression          |    ✅
