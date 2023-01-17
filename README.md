@@ -1,7 +1,6 @@
 # Machine Learning Algorithms implemented in Python from Scratch (MATH provided)
-List of Available algos:
 
-Regression(Clustering, Clasif): 
+List of available algorithms: 
 -----------------------------------------------------
 - Linear Regression w/ 2 variables   |    ✅    
 - Multivariate Linear Regression     |    ✅
