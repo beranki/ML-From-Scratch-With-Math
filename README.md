@@ -12,6 +12,6 @@
     - Decision Trees                     |    ❌
 
 
-Key:
-❌ => in progress/not started
-✅ => completed and tested WITH PROOF
+Key: <br>
+❌ => in progress/not started <br>
+✅ => completed and tested WITH PROOF <br>
