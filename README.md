@@ -1,9 +1,9 @@
 # Machine Learning Algorithms implemented in Python from Scratch (MATH provided)
 List of Available algos:
 
-Regression(Clustering, Clasif):      |  STATUS  
+Regression(Clustering, Clasif): 
 -----------------------------------------------------
-- Linear Regression w/ 2 variables   |<tab>✅    
+- Linear Regression w/ 2 variables   |    ✅    
 - Multivariate Linear Regression     |    ✅
 - Logistic Regression                |    ✅
 - Support Vector Regression          |    ✅
